@@ -38,6 +38,7 @@ header {text-align: center;}
 
 hr{
   width: 0;
+  max-width: 700px;
   opacity: 0;
   animation: showHR 2s forwards ease-in;
 }
