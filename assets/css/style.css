@@ -1,0 +1,117 @@
+body {
+  background-color: black;
+  color: #fff;
+}
+
+header {text-align: center;}
+
+.profile{
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  border-radius: 50%;
+  border: solid 1px black;
+  background-color: darkslategray;
+  opacity: 0;
+  animation: show 2s forwards ease-in;
+}
+@keyframes show {
+  100%{
+    opacity: 1;
+    box-shadow: limegreen 5px 5px 100px 10px;
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  margin-top: 30px;
+  color: transparent;
+  animation: neon 2s forwards ease-in;
+  animation-delay: 1s;
+}
+@keyframes neon {
+  100%{color: limegreen}
+}
+
+hr{
+  width: 0;
+  opacity: 0;
+  animation: showHR 2s forwards ease-in;
+}
+@keyframes showHR {
+  100%{
+    opacity: 1;
+    width: 90%;
+  }
+}
+
+.about {text-align: center;}
+
+.subtitle {
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  max-width: 700px;
+  padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: darkslategray;
+  border-radius: 10px;
+}
+
+.project-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  overflow-x: scroll;
+  width: 90%;
+  padding:10px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: darkslategray;
+}
+
+.card {
+  font-size: xx-large;
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  background-color: darkgray;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border-radius: 5px;
+}
+
+.Langs {
+  background-color: black;
+  padding: 10px;
+}
+.html{width: 95%;}
+.css{width: 90%;}
+.js{width: 80%;}
+.java{width: 20%;}
+.pill{
+  border-radius: 20px;
+  padding: 0;
+  overflow: hidden;
+}
+.fill{
+  height: 100%;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.langsList{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
